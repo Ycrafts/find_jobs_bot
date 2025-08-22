@@ -1,0 +1,26 @@
+# Environment files
+.env
+.env.*
+**/.env
+find_jobs/.env
+find_jobs/find_jobs/.env
+
+# Secrets / sessions
+*.session
+find_jobs/find_jobs/my_account.session
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log 

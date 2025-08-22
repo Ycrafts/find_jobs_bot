@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: ./find_jobs
+      dockerfile: Dockerfile
+    container_name: find-jobs
+    env_file:
+      - ./find_jobs/.env
+    restart: unless-stopped
+    # The image already runs `python main.py` via Dockerfile CMD
+    # To run the worker using the same image when needed:
+    # docker compose run --rm app python worker.py 
